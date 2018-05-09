@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_e4e5eD"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:id="@+id/iv_qrcode"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="qrcode"
+        android:src="@drawable/icon_qr_code" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_user_head_pic"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_portrait" />
+
+    <TextView
+        style="@style/Text_333.34"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        tools:text="Yvette" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.wuli.delivery.view.ListViewForScrollView
+                android:id="@+id/listview_left_content"
+                style="@style/ListView_common_style"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                tools:listitem="@android:layout/simple_list_item_1" />
+
+            <TextView
+                android:id="@+id/btn_exit"
+                style="@style/Text_333.34"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="@string/action_exit" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

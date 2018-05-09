@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    app:columnCount="3"
+    app:rowCount="2">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/bg_user_function_zone" />
+
+        <TextView
+            style="@style/Text_333.24"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@drawable/bg_user_function_zone"
+            android:text="@string/msg_user_info" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/bg_user_function_zone" />
+
+        <TextView
+            style="@style/Text_333.24"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@drawable/bg_user_function_zone"
+            android:text="@string/msg_user_authentication" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/bg_user_function_zone" />
+
+        <TextView
+            style="@style/Text_333.24"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@drawable/bg_user_function_zone"
+            android:text="@string/msg_user_integration" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/bg_user_function_zone" />
+
+        <TextView
+            style="@style/Text_333.24"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@drawable/bg_user_function_zone"
+            android:text="@string/msg_expressage_history" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/bg_user_function_zone" />
+
+        <TextView
+            style="@style/Text_333.24"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@drawable/bg_user_function_zone"
+            android:text="@string/msg_user_evaluation" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/bg_user_function_zone" />
+
+        <TextView
+            style="@style/Text_333.24"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@drawable/bg_user_function_zone"
+            android:text="@string/msg_user_wallet" />
+    </LinearLayout>
+
+</android.support.v7.widget.GridLayout>
+

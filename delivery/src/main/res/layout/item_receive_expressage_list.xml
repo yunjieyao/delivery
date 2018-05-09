@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tv_release_time"
+        style="@style/Text_333.24"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:text="4月20 16：32" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/tv_release_time" />
+
+    <TextView
+        android:id="@+id/tv_delivery_type"
+        style="@style/Text_333.24"
+        android:layout_below="@id/space1"
+        tools:text="申通快递 蓝鲸笔记本电脑桌可折叠" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space2"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/tv_delivery_type" />
+
+    <TextView
+        android:id="@+id/tv_delivery_site"
+        style="@style/Text_333.24"
+        android:layout_below="@id/space2"
+        tools:text="送达地点： Z227" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/tv_delivery_site" />
+
+    <TextView
+        android:id="@+id/tv_delivery_remark"
+        style="@style/Text_333.24"
+        android:layout_below="@id/space3"
+        tools:text="代领备注： 今日内10点" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space4"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/tv_delivery_remark" />
+
+    <TextView
+        android:id="@+id/tv_delivery_time"
+        style="@style/Text_333.24"
+        android:layout_below="@id/space4"
+        tools:text="预计送达时间： 21:00" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space5"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/tv_delivery_time" />
+
+    <TextView
+        android:id="@+id/tv_expressage_lead_reward"
+        style="@style/Text_ff3b30.24"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        tools:text="报酬：1元" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <com.wuli.delivery.view.RoundedTextView
+        android:id="@+id/tv_delivery_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/space5"
+        android:padding="3dp"
+        app:rtv_background_color="@color/color_e8dddf"
+        app:rtv_border_color="@color/color_e6dfdf"
+        app:rtv_corner_radius="8dp"
+        tools:text="等待接单" />
+
+    <com.wuli.delivery.view.RoundedTextView
+        android:id="@+id/tv_confirm_expressage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space5"
+        android:padding="3dp"
+        android:text="确认包裹完好"
+        app:rtv_background_color="@color/color_b2d9d4"
+        app:rtv_border_color="@color/color_e6dfdf"
+        app:rtv_corner_radius="8dp" />
+
+    <com.wuli.delivery.view.RoundedTextView
+        android:id="@+id/tv_confirm_finished"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space5"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_confirm_expressage"
+        android:padding="3dp"
+        android:text="确认送达"
+        app:rtv_background_color="@color/color_b2d9d4"
+        app:rtv_border_color="@color/color_b2d9d4"
+        app:rtv_corner_radius="8dp" />
+
+    <com.wuli.delivery.view.RoundedTextView
+        android:id="@+id/tv_check_appraise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space5"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/tv_delivery_status"
+        android:padding="3dp"
+        android:text="查看评价"
+        app:rtv_background_color="@color/color_b2d9d4"
+        app:rtv_border_color="@color/color_b2d9d4"
+        app:rtv_corner_radius="8dp" />
+
+    <com.wuli.delivery.view.RoundedTextView
+        android:id="@+id/tv_problem_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_confirm_expressage"
+        android:layout_marginTop="4dp"
+        android:padding="3dp"
+        android:text="问题反馈"
+        app:rtv_background_color="@color/color_e8dedf"
+        app:rtv_border_color="@color/color_b2d9d4"
+        app:rtv_corner_radius="8dp" />
+
+    <com.wuli.delivery.view.RoundedTextView
+        android:id="@+id/tv_contact_expressage_leader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_confirm_expressage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/tv_problem_feedback"
+        android:padding="3dp"
+        android:text="联系代领人"
+        app:rtv_background_color="@color/color_e8dedf"
+        app:rtv_border_color="@color/color_b2d9d4"
+        app:rtv_corner_radius="8dp" />
+
+</RelativeLayout>

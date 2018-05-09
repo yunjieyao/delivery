@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="136dp"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tv_finished_delivery_time"
+        style="@style/Text_333.24"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:text="4月20 16：32" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/tv_finished_delivery_time" />
+
+    <TextView
+        android:id="@+id/tv_finished_delivery_type"
+        style="@style/Text_333.24"
+        android:layout_below="@id/space1"
+        tools:text="申通快递 蓝鲸笔记本电脑桌可折叠" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space2"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/tv_finished_delivery_type" />
+
+    <TextView
+        android:id="@+id/tv_finished_expressage_lead_reward"
+        style="@style/Text_ff3b30.24"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        tools:text="报酬：1元" />
+
+    <com.wuli.delivery.view.RoundedTextView
+        android:id="@+id/tv_complaint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/space2"
+        android:padding="3dp"
+        app:rtv_background_color="@color/color_e6dfdf"
+        app:rtv_border_color="@color/color_999999"
+        app:rtv_corner_radius="8dp"
+        android:text="投诉" />
+
+    <com.wuli.delivery.view.RoundedTextView
+        android:id="@+id/tv_appraise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space2"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/tv_complaint"
+        android:padding="3dp"
+        app:rtv_background_color="@color/color_ff3b30"
+        app:rtv_border_color="@color/color_999999"
+        app:rtv_corner_radius="8dp"
+        android:text="评价" />
+
+
+    <com.wuli.delivery.view.RoundedTextView
+        android:id="@+id/tv_finished_delivery_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/space2"
+        android:padding="3dp"
+        app:rtv_background_color="@color/color_ff3b30"
+        app:rtv_border_color="@color/color_999999"
+        app:rtv_corner_radius="8dp"
+        android:text="已完成" />
+
+
+</RelativeLayout>

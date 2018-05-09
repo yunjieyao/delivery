@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="left_content_items">
+        <item>我的主页</item>
+        <item>代领协议</item>
+        <item>帮助中心</item>
+        <item>帐号设置</item>
+        <item>产品客服</item>
+        <item>系统设置</item>
+        <item>评价我们</item>
+        <item>关于</item>
+    </string-array>
+
+    <string-array name="search_condition_items">
+        <item>同一栋楼</item>
+        <item>离我最近</item>
+        <item>熟人发布</item>
+        <item>报酬最多</item>
+    </string-array>
+
+    <string-array name="expressage_list_titles">
+        <item>我的发布</item>
+        <item>我的接单</item>
+        <item>快递列表</item>
+    </string-array>
+
+    <string-array name="expressage_type_list">
+        <item>顺丰</item>
+        <item>圆通</item>
+        <item>韵达</item>
+    </string-array>
+
+    <string-array name="expressage_release_status_list">
+        <item>等待接单</item>
+        <item>已被接单</item>
+        <item>已完成</item>
+    </string-array>
+
+    <string-array name="expressage_receive_status_list">
+        <item>正在代领</item>
+        <item>已完成</item>
+    </string-array>
+</resources>

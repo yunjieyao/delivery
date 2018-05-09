@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Wuli-delivery</string>
+    <string name="msg_not_support_chat">很抱歉，暂不支持聊天功能</string>
+    <string name="action_exit">退出</string>
+    <string name="msg_search_delivery">搜索快递信息</string>
+    <string name="action_advanced_filter"><u>高级筛选</u></string>
+    <string name="msg_credit_rating">信用等级：</string>
+    <string name="msg_user_info">个人信息</string>
+    <string name="msg_user_authentication">身份认证</string>
+    <string name="msg_user_integration">我的积分</string>
+    <string name="msg_expressage_history">代领历史</string>
+    <string name="msg_user_evaluation">我的评价</string>
+    <string name="msg_user_wallet">我的钱包</string>
+    <string name="action_import_taobao_info">导入淘宝信息</string>
+    <string name="action_import_expressage_info">导入快递软件信息</string>
+    <string name="action_import_message">导入短信</string>
+    <string name="action_confirm">确认</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_yes">是</string>
+    <string name="action_no">否</string>
+    <string name="msg_confirm_delivery">请您确认已收到快递物件~确认收获后快递如有丢失代领方和快递点将不再承担任何责任</string>
+</resources>

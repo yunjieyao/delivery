@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView
+    android:id="@+id/listview_receive_expresage"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    style="@style/ListView_common_style"
+    android:divider="@drawable/bg_horizontal_divide_line"
+    android:dividerHeight="0.5dp"
+    tools:listitem="@layout/item_receive_expressage_list"
+    android:layout_height="match_parent">
+
+</ListView>

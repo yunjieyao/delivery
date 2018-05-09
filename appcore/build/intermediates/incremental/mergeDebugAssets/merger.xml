@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/yvette/Desktop/android_project-master/appcore/src/main/assets"/><source path="/Users/yvette/Desktop/android_project-master/appcore/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/yvette/Desktop/android_project-master/appcore/src/debug/assets"/></dataSet></merger>

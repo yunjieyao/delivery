@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <com.wuli.delivery.view.RoundedTextView
+            android:id="@+id/rtv_import_taobao_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:padding="3dp"
+            android:text="@string/action_import_taobao_info"
+            app:rtv_background_color="@color/color_b2d9d4"
+            app:rtv_border_color="@color/color_999999" />
+
+        <com.wuli.delivery.view.RoundedTextView
+            android:id="@+id/rtv_import_expressage_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="3dp"
+            android:text="@string/action_import_expressage_info"
+            app:rtv_background_color="@color/color_b2d9d4"
+            app:rtv_border_color="@color/color_999999" />
+
+        <com.wuli.delivery.view.RoundedTextView
+            android:id="@+id/rtv_import_short_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:padding="3dp"
+            android:text="@string/action_import_message"
+            app:rtv_background_color="@color/color_b2d9d4"
+            app:rtv_border_color="@color/color_999999" />
+
+        <com.wuli.delivery.view.ListViewForScrollView
+            android:id="@+id/listview_expressage"
+            style="@style/ListView_common_style"
+            android:layout_below="@id/rtv_import_short_message"
+            android:layout_marginTop="15dp"
+            android:divider="@drawable/bg_horizontal_divide_line"
+            android:dividerHeight="0.5dp"
+            tools:listitem="@layout/item_expressage_list" />
+
+    </RelativeLayout>
+</ScrollView>

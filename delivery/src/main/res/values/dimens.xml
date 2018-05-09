@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_title_drawable_padding">52dp</dimen>
+    <dimen name="dialog_title_drawable_padding_negative">-52dp</dimen>
+    <dimen name="dialog_message_margin_top">35dp</dimen>
+</resources>

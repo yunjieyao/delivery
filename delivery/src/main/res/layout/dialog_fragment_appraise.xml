@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EDF0"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Text_333.24"
+        android:layout_centerHorizontal="true"
+        android:text="评价对方"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/layout_delivery_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text_333.24"
+            android:text="送达速度"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="36dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_service_attitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_delivery_speed"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_service_attitude"
+            style="@style/Text_333.24"
+            android:text="服务态度"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="36dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_expressage_excellent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/layout_service_attitude"
+        android:layout_alignRight="@id/layout_service_attitude"
+        android:layout_below="@id/layout_service_attitude"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text_333.24"
+            android:layout_below="@id/layout_service_attitude"
+            android:text="快递完好度"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RatingBar
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_appraise"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@id/layout_expressage_excellent"
+        android:layout_below="@id/layout_expressage_excellent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/dialog_et_appraise_bg" />
+
+    <TextView
+        android:id="@+id/tv_appraise_info"
+        style="@style/Text_333.24"
+        android:layout_below="@id/et_appraise"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="记得友好的和对方沟通和进行点评哦~" />
+
+    <com.wuli.delivery.view.RoundedTextView
+        android:id="@+id/rtv_confirm"
+        android:layout_width="100dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/tv_appraise_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="确认"
+        android:textSize="18sp"
+        app:rtv_background_color="@color/color_a19d9f"
+        app:rtv_border_color="@color/color_b2d9d4"
+        app:rtv_corner_radius="8dp" />
+
+    <TextView
+        android:id="@+id/tv_appreciate_info"
+        style="@style/Text_333.24"
+        android:layout_below="@id/rtv_confirm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="如果感谢对方，不妨赞赏下TA哦"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.wuli.delivery.view.RoundedTextView
+        android:id="@+id/rtv_appreciate"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_appreciate_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="3dp"
+        android:text="赞赏"
+        app:rtv_background_color="@color/color_e9c3c5"
+        app:rtv_border_color="@color/color_b2d9d4"
+        app:rtv_corner_radius="8dp" />
+
+
+</RelativeLayout>

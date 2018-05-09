@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color_eeeeee"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:entries="@array/search_condition_items"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/Text_333.24"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/spinner"
+            android:autoLink="all"
+            android:text="@string/action_advanced_filter" />
+
+        <EditText
+            style="@style/Text_333.24"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_search_delivery"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/icon_home_search"
+            android:gravity="left|center_vertical"
+            android:hint="@string/msg_search_delivery"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listview_home_expressage_list"
+        style="@style/ListView_common_style"
+        android:layout_below="@id/layout_top"
+        android:divider="@drawable/bg_horizontal_divide_line"
+        android:dividerHeight="0.5dp"
+        tools:listitem="@layout/item_home_expressage_list" />
+
+</LinearLayout>
